@@ -1,0 +1,37 @@
+---
+# Tags for announcement messages
+# - {MAXPLAYERS}: Shows the maximum number of players allowed on the server
+# - {TOTALPLAYERS}: Show the number of total online players
+# - {PREFIX}: Show prefix of ennouncement
+# - {SUFFIX}: Show suffix of announcement
+# - {TIME}: Show current time
+# Tags for /sendmessage
+# - {MESSAGE}: Show message
+# - {MAXPLAYERS}: Show the maximum number of players supported by the server
+# - {TOTALPLAYERS}: Show the number of all online players
+# - {PREFIX}: Show prefix
+# - {PLAYER}: Message receiver
+# - {SENDER}: Show sender name
+# - {SUFFIX}: Show suffix
+# - {TIME}: Show current time
+
+# Prefix
+prefix: "&c[&o&fSafeguard&r&c]"
+# Suffix
+suffix: "[A]"
+# Date\Time format (replaced in {TIME}). For format codes read http://php.net/manual/en/datetime.formats.php
+datetime-format: "H:i:s"
+# Message broadcast
+message-broadcast:
+  # Enable message broadcast
+  enabled: true
+  # Announcement interval (in seconds)
+  time: 15
+  # /sendmessage command format
+  command-format: "&e[{TIME}] {PREFIX} {SUFFIX} &a{SENDER}&e>&f {MESSAGE}"
+  # Announcements
+  messages:
+    - "&e[{TIME}] {PREFIX}&f 1st message"
+    - "&e[{TIME}] {PREFIX}&f 2nd message"
+    - "&e[{TIME}] {PREFIX}&f 3rd message"
+...

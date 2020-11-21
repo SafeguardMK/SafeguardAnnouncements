@@ -1,0 +1,35 @@
+---
+name: SafeguardAnnouncements
+version: 0.0.1
+main: MK\SafeguardAnnouncements
+api: 3.15.5
+load: STARTUP
+author: MK
+description: An automated announcment plugin for the Safeguard Server.
+website: (WIP)
+commands:
+  safeguardannouncements:
+    aliases: [sa, safeguardannouncements]
+    description: SafeguardAnnouncements commands.
+    permission: SafeguardAnnouncements
+  sendmessage:
+    aliases: [sm, smsg]
+    description: Send a message to the specified player (* for all players)
+    permission: safeguardannouncements.sendmessage
+permissions:
+  safeguardannouncements:
+    default: op
+    description: SafeguardAnnouncements permissions tree.
+    children:
+      safeguardannouncments.info:
+        default: op
+        description: Let player read info about SafeguardAnnouncements.
+      safeguardannouncements.reload:
+        default: op
+        description: Let player reload SafeguardAnnouncements.
+      safeguardannouncements.update:
+        default: op
+        description: Let player update SafeguardAnnouncements.
+      safeguardannouncements.sendmessage:
+        default: op
+        description: Let player send messages to players with /sendmessage command.
